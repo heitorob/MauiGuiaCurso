@@ -8,8 +8,7 @@
     Title="MauiGuiaCurso">
 
     <ShellContent
-        Title="Home"
+        Title="Menu Inicial"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
 </Shell>
