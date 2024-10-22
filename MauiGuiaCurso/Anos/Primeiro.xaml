@@ -3,20 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiGuiaCurso.Anos.Primeiro"
              Title="Primeiro"
-             BackgroundColor="DarkBlue">
+             BackgroundColor="Black">
     <ContentPage.Resources>
             <ResourceDictionary>
                 <Style x:Key="btncommon" TargetType="Button">
-                    <Setter Property="HorizontalOptions" Value="Fill"/>
-                    <Setter Property="VerticalOptions" Value="Fill"/>
-                    <Setter Property="FontSize" Value="24"/>
-                    <Setter Property="TextColor" Value="White"/>
-                    <Setter Property="BackgroundColor" Value="Black"/>
-                    <Setter Property="CornerRadius" Value="2"/>
-                    <Setter Property="BorderColor" Value="DarkCyan"/>
-                    <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="TextColor" Value="PaleTurquoise"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="CornerRadius" Value="2"/>
+                <Setter Property="BorderColor" Value="Turquoise"/>
+                <Setter Property="BorderWidth" Value="3"/>
+                <Setter Property="Margin" Value="5"/>
 
-                </Style>
+            </Style>
             </ResourceDictionary>
         </ContentPage.Resources>
         <ContentPage.Content>
@@ -25,17 +26,17 @@
                       ColumnDefinitions="*,*"
               RowSpacing="1" ColumnSpacing="1">
                     <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource btncommon}"
-                    x:Name="analise" Text="Análise e Projeto de Sistemas" LineBreakMode="WordWrap" />
+                    x:Name="analise" Text="Análise e Projeto de Sistemas" LineBreakMode="WordWrap" Clicked="analise_Clicked" />
                     <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource btncommon}"
-                    x:Name="banco" Text="Banco de Dados" LineBreakMode="WordWrap" />
+                    x:Name="banco" Text="Banco de Dados I" LineBreakMode="WordWrap" Clicked="banco_Clicked" />
                     <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource btncommon}"
-                    x:Name="design" Text="Design Digital" LineBreakMode="WordWrap"/>
+                    x:Name="design" Text="Design Digital" LineBreakMode="WordWrap" Clicked="design_Clicked" />
                     <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource btncommon}"
-                    x:Name="fundamentos" Text="Fundamentos da Informática" LineBreakMode="WordWrap"/>
+                    x:Name="fundamentos" Text="Fundamentos da Informática" LineBreakMode="WordWrap" Clicked="fundamentos_Clicked" />
                     <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource btncommon}"
-                    x:Name="tecnicas" Text="Técnicas de Programação e Algoritimos" LineBreakMode="WordWrap" />
+                    x:Name="tecnicas" Text="Técnicas de Programação e Algoritimos" LineBreakMode="WordWrap" Clicked="tecnicas_Clicked" />
                     <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource btncommon}"
-                    x:Name="web" Text="Programação Web" LineBreakMode="WordWrap" />
+                    x:Name="web" Text="Programação Web I" LineBreakMode="WordWrap" Clicked="web_Clicked" />
             </Grid>
             </ScrollView>
         </ContentPage.Content>

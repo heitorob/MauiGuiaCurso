@@ -8,12 +8,13 @@
             <Style x:Key="btncommon" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Fill"/>
                 <Setter Property="VerticalOptions" Value="Fill"/>
-                <Setter Property="FontSize" Value="25"/>
-                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="TextColor" Value="AliceBlue"/>
                 <Setter Property="BackgroundColor" Value="Black"/>
                 <Setter Property="CornerRadius" Value="2"/>
-                <Setter Property="BorderColor" Value="Purple"/>
-                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BorderColor" Value="LightGray"/>
+                <Setter Property="BorderWidth" Value="3"/>
+                <Setter Property="Margin" Value="5"/>
 
             </Style>
         </ResourceDictionary>
